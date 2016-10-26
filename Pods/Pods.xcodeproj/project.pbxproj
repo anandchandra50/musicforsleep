@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17BB6234ECB5A309837736662C4B1BCF /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79376D247D489773D7E24EAC9B159283 /* Assets.bundle */; };
+		1FE3A56CF46FD3985A719C1D04ACAEE7 /* Pods-SingtoSleep-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8034A09BBC01ED0BD02079FEB2AC9739 /* Pods-SingtoSleep-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31B065CE78C0A603D15209BF56E0B5DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		468241CF523EC8080C13CB4DCE10CCEA /* Pods-SingtoSleepUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34899F4E64EDB837C581BC8CEE32E9A3 /* Pods-SingtoSleepUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556841BF8CCB00D9BD5072B955E8259D /* Pods-SingtoSleepTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C66A17EAE630AC5E3B01842979AE1DF /* Pods-SingtoSleepTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A5AB837BD7BFEF57C1301BC06C0A689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5FB6600A24FF4AEA512DB51C8D031956 /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = A972B15E9D285B9B1A36315DF29B4E77 /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F490E060DF6395F18D73403999ACAE6 /* Pods-SingtoSleep-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2DC60F73F3F63BF31C7AC4EA9D299 /* Pods-SingtoSleep-dummy.m */; };
+		85DFA3F896E53E6F003AF955210F439F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		8CCD04112ED423FD9353A4231F06FC52 /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A26821F8DC21FE3436AFC4BCB09D61 /* youtube-ios-player-helper-dummy.m */; };
+		8EED7DCFE511A963B8F911A1943E61E5 /* Pods-SingtoSleepUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 055364676288F14C0BB6728A341EC504 /* Pods-SingtoSleepUITests-dummy.m */; };
+		A991CB0F48E6F59A3BC30F21DE5B177E /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DEDEC20D350B168BF7B7FFDF4EB1E3 /* YTPlayerView.m */; };
+		CD998EDCA14314C4DCF0F47882DA7794 /* Pods-SingtoSleepTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B07FA71D15A3F15031850BF3FC33C4 /* Pods-SingtoSleepTests-dummy.m */; };
+		DBAE69FB3D8B357416E267DD27B0D3D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E9081A24ECEEA4A82CB20D2256B71193 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4799393EAD678EAE1DA6486B3965A0F /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		570CB0973263EA15E9455CBE27088CD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 586A0248CDE8EDF280026D26D1CB8B50;
+			remoteInfo = "youtube-ios-player-helper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		055364676288F14C0BB6728A341EC504 /* Pods-SingtoSleepUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SingtoSleepUITests-dummy.m"; sourceTree = "<group>"; };
+		14AC9E01389813F928EC47F198D8D811 /* Pods-SingtoSleepUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SingtoSleepUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1709899666B6E013026FAC8AA10EC406 /* Pods-SingtoSleepTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SingtoSleepTests-frameworks.sh"; sourceTree = "<group>"; };
+		17B8540B29808CB250C8C314631BE9EF /* Pods-SingtoSleepTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SingtoSleepTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2143ECC5AA58DB9AA8AAF96FA7D29CA3 /* Pods-SingtoSleep.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SingtoSleep.modulemap"; sourceTree = "<group>"; };
+		22B25D4475481AE07050F0BABA60025F /* Pods_SingtoSleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingtoSleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29DEDEC20D350B168BF7B7FFDF4EB1E3 /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Classes/YTPlayerView.m; sourceTree = "<group>"; };
+		34899F4E64EDB837C581BC8CEE32E9A3 /* Pods-SingtoSleepUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SingtoSleepUITests-umbrella.h"; sourceTree = "<group>"; };
+		39D9C844FBBBDA1DA0DA52E2F5BA38F5 /* Pods-SingtoSleepUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SingtoSleepUITests-frameworks.sh"; sourceTree = "<group>"; };
+		40B07FA71D15A3F15031850BF3FC33C4 /* Pods-SingtoSleepTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SingtoSleepTests-dummy.m"; sourceTree = "<group>"; };
+		494DBFB18C232FE025AF0EF5A4FC2000 /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
+		49EF3E4E4E264AA8A1B59083399A718E /* Pods-SingtoSleepUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SingtoSleepUITests.modulemap"; sourceTree = "<group>"; };
+		4C66A17EAE630AC5E3B01842979AE1DF /* Pods-SingtoSleepTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SingtoSleepTests-umbrella.h"; sourceTree = "<group>"; };
+		5B37214481FFB95EDBA5BC510AB7D8C8 /* Pods-SingtoSleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SingtoSleep.release.xcconfig"; sourceTree = "<group>"; };
+		5D1E390175C9DB6458DBAC41B7485942 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E6F955251D4EA7F061492B9D1C06B93 /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
+		5F114EC234584EDC281015B94A5A589C /* Pods-SingtoSleepTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SingtoSleepTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6245804843DAC94876D67A97BF372034 /* Pods-SingtoSleepTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SingtoSleepTests-resources.sh"; sourceTree = "<group>"; };
+		6A206CB11456A45A86347AE6437CEE16 /* Pods-SingtoSleepUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SingtoSleepUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7235E53C3146E2CB55F0292AB4D4C7A0 /* Pods-SingtoSleepUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SingtoSleepUITests.release.xcconfig"; sourceTree = "<group>"; };
+		79376D247D489773D7E24EAC9B159283 /* Assets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Assets.bundle; path = "youtube-ios-player-helper/Assets.bundle"; sourceTree = "<group>"; };
+		8034A09BBC01ED0BD02079FEB2AC9739 /* Pods-SingtoSleep-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SingtoSleep-umbrella.h"; sourceTree = "<group>"; };
+		825E648E48426E747296392DC2A073E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82D20F464993388BFE3A03EE5BA76708 /* Pods-SingtoSleep-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SingtoSleep-frameworks.sh"; sourceTree = "<group>"; };
+		85CBC42FE6E7C1773AF7426E0514E746 /* Pods-SingtoSleepUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SingtoSleepUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8F79C83872FA2807B7AB0BC421524A63 /* Pods-SingtoSleepTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SingtoSleepTests.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98E2DC60F73F3F63BF31C7AC4EA9D299 /* Pods-SingtoSleep-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SingtoSleep-dummy.m"; sourceTree = "<group>"; };
+		99A7D6521B9580FFF78BB5BBB4EAAA2C /* Pods-SingtoSleep-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SingtoSleep-resources.sh"; sourceTree = "<group>"; };
+		A0492EC4955823A6C71FE8E2A4BFB57C /* Pods-SingtoSleep-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SingtoSleep-acknowledgements.plist"; sourceTree = "<group>"; };
+		A7EC547EDE57104D8822189323406DBA /* youtube-ios-player-helper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.xcconfig"; sourceTree = "<group>"; };
+		A972B15E9D285B9B1A36315DF29B4E77 /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Classes/YTPlayerView.h; sourceTree = "<group>"; };
+		C0A26821F8DC21FE3436AFC4BCB09D61 /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
+		C3987182BF3AB8A211574DD2C329CB28 /* Pods_SingtoSleepUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingtoSleepUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5D53A354A4BB3A5C69727088ACA0366 /* Pods-SingtoSleepTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SingtoSleepTests.modulemap"; sourceTree = "<group>"; };
+		C62D3221D721DBF2E3846DADB364E80A /* Pods-SingtoSleep-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SingtoSleep-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D26E41EE1D140CA57A77F47A6AC7531D /* Pods-SingtoSleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SingtoSleep.debug.xcconfig"; sourceTree = "<group>"; };
+		D4799393EAD678EAE1DA6486B3965A0F /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
+		D806F88D15E4BAA15F99E509AF311249 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87ABAE2CEF1B9BDD11F346BC6C689A0 /* Pods-SingtoSleepUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SingtoSleepUITests-resources.sh"; sourceTree = "<group>"; };
+		E3B2C30CEE858D98E5A57920DF7E68E5 /* Pods-SingtoSleepTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SingtoSleepTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2BE5644FAE2154AF4E44AD9BC397C0D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F428E02A6F38E2DC59BA7DCCB9722AE1 /* Pods_SingtoSleepTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingtoSleepTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9F59A97D2B7D622207E857CE50D5211 /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = youtube_ios_player_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AF1DEF9EF0AE502ED79F13E5A69D00E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B065CE78C0A603D15209BF56E0B5DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C65D7AE79C933A08C1DB8FB1EF5320C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85DFA3F896E53E6F003AF955210F439F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B04B41F3BFC0E50011631A03A8395D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5AB837BD7BFEF57C1301BC06C0A689 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D37D65BDE9D08CE27B5DFF27E09D0E63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBAE69FB3D8B357416E267DD27B0D3D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		430B554D54C9227873F99DD3701634FA /* Pods-SingtoSleep */ = {
+			isa = PBXGroup;
+			children = (
+				5D1E390175C9DB6458DBAC41B7485942 /* Info.plist */,
+				2143ECC5AA58DB9AA8AAF96FA7D29CA3 /* Pods-SingtoSleep.modulemap */,
+				C62D3221D721DBF2E3846DADB364E80A /* Pods-SingtoSleep-acknowledgements.markdown */,
+				A0492EC4955823A6C71FE8E2A4BFB57C /* Pods-SingtoSleep-acknowledgements.plist */,
+				98E2DC60F73F3F63BF31C7AC4EA9D299 /* Pods-SingtoSleep-dummy.m */,
+				82D20F464993388BFE3A03EE5BA76708 /* Pods-SingtoSleep-frameworks.sh */,
+				99A7D6521B9580FFF78BB5BBB4EAAA2C /* Pods-SingtoSleep-resources.sh */,
+				8034A09BBC01ED0BD02079FEB2AC9739 /* Pods-SingtoSleep-umbrella.h */,
+				D26E41EE1D140CA57A77F47A6AC7531D /* Pods-SingtoSleep.debug.xcconfig */,
+				5B37214481FFB95EDBA5BC510AB7D8C8 /* Pods-SingtoSleep.release.xcconfig */,
+			);
+			name = "Pods-SingtoSleep";
+			path = "Target Support Files/Pods-SingtoSleep";
+			sourceTree = "<group>";
+		};
+		5E68BFF7326A13AE8E8CDE300B4E13BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79376D247D489773D7E24EAC9B159283 /* Assets.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				EFBD6D5070879E977E70ED78BBDF7218 /* Pods */,
+				8CEB3FCBC8C630D81264EE034DDACA26 /* Products */,
+				86E16FBBFE80BF455AE6CAA172C8A403 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86E16FBBFE80BF455AE6CAA172C8A403 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				430B554D54C9227873F99DD3701634FA /* Pods-SingtoSleep */,
+				E611F56F2FC45825C6516278D047A9F5 /* Pods-SingtoSleepTests */,
+				E59DEF4EC36A244E700056A91808BC23 /* Pods-SingtoSleepUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8CEB3FCBC8C630D81264EE034DDACA26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22B25D4475481AE07050F0BABA60025F /* Pods_SingtoSleep.framework */,
+				F428E02A6F38E2DC59BA7DCCB9722AE1 /* Pods_SingtoSleepTests.framework */,
+				C3987182BF3AB8A211574DD2C329CB28 /* Pods_SingtoSleepUITests.framework */,
+				F9F59A97D2B7D622207E857CE50D5211 /* youtube_ios_player_helper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FF5E66EAC472A1CA3FB71D79878C9A0 /* youtube-ios-player-helper */ = {
+			isa = PBXGroup;
+			children = (
+				A972B15E9D285B9B1A36315DF29B4E77 /* YTPlayerView.h */,
+				29DEDEC20D350B168BF7B7FFDF4EB1E3 /* YTPlayerView.m */,
+				5E68BFF7326A13AE8E8CDE300B4E13BE /* Resources */,
+				A1E6C96D25FB9EF512BEC9F2334B8A87 /* Support Files */,
+			);
+			path = "youtube-ios-player-helper";
+			sourceTree = "<group>";
+		};
+		A1E6C96D25FB9EF512BEC9F2334B8A87 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2BE5644FAE2154AF4E44AD9BC397C0D /* Info.plist */,
+				494DBFB18C232FE025AF0EF5A4FC2000 /* youtube-ios-player-helper.modulemap */,
+				A7EC547EDE57104D8822189323406DBA /* youtube-ios-player-helper.xcconfig */,
+				C0A26821F8DC21FE3436AFC4BCB09D61 /* youtube-ios-player-helper-dummy.m */,
+				5E6F955251D4EA7F061492B9D1C06B93 /* youtube-ios-player-helper-prefix.pch */,
+				D4799393EAD678EAE1DA6486B3965A0F /* youtube-ios-player-helper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/youtube-ios-player-helper";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E59DEF4EC36A244E700056A91808BC23 /* Pods-SingtoSleepUITests */ = {
+			isa = PBXGroup;
+			children = (
+				825E648E48426E747296392DC2A073E1 /* Info.plist */,
+				49EF3E4E4E264AA8A1B59083399A718E /* Pods-SingtoSleepUITests.modulemap */,
+				6A206CB11456A45A86347AE6437CEE16 /* Pods-SingtoSleepUITests-acknowledgements.markdown */,
+				85CBC42FE6E7C1773AF7426E0514E746 /* Pods-SingtoSleepUITests-acknowledgements.plist */,
+				055364676288F14C0BB6728A341EC504 /* Pods-SingtoSleepUITests-dummy.m */,
+				39D9C844FBBBDA1DA0DA52E2F5BA38F5 /* Pods-SingtoSleepUITests-frameworks.sh */,
+				D87ABAE2CEF1B9BDD11F346BC6C689A0 /* Pods-SingtoSleepUITests-resources.sh */,
+				34899F4E64EDB837C581BC8CEE32E9A3 /* Pods-SingtoSleepUITests-umbrella.h */,
+				14AC9E01389813F928EC47F198D8D811 /* Pods-SingtoSleepUITests.debug.xcconfig */,
+				7235E53C3146E2CB55F0292AB4D4C7A0 /* Pods-SingtoSleepUITests.release.xcconfig */,
+			);
+			name = "Pods-SingtoSleepUITests";
+			path = "Target Support Files/Pods-SingtoSleepUITests";
+			sourceTree = "<group>";
+		};
+		E611F56F2FC45825C6516278D047A9F5 /* Pods-SingtoSleepTests */ = {
+			isa = PBXGroup;
+			children = (
+				D806F88D15E4BAA15F99E509AF311249 /* Info.plist */,
+				C5D53A354A4BB3A5C69727088ACA0366 /* Pods-SingtoSleepTests.modulemap */,
+				17B8540B29808CB250C8C314631BE9EF /* Pods-SingtoSleepTests-acknowledgements.markdown */,
+				5F114EC234584EDC281015B94A5A589C /* Pods-SingtoSleepTests-acknowledgements.plist */,
+				40B07FA71D15A3F15031850BF3FC33C4 /* Pods-SingtoSleepTests-dummy.m */,
+				1709899666B6E013026FAC8AA10EC406 /* Pods-SingtoSleepTests-frameworks.sh */,
+				6245804843DAC94876D67A97BF372034 /* Pods-SingtoSleepTests-resources.sh */,
+				4C66A17EAE630AC5E3B01842979AE1DF /* Pods-SingtoSleepTests-umbrella.h */,
+				E3B2C30CEE858D98E5A57920DF7E68E5 /* Pods-SingtoSleepTests.debug.xcconfig */,
+				8F79C83872FA2807B7AB0BC421524A63 /* Pods-SingtoSleepTests.release.xcconfig */,
+			);
+			name = "Pods-SingtoSleepTests";
+			path = "Target Support Files/Pods-SingtoSleepTests";
+			sourceTree = "<group>";
+		};
+		EFBD6D5070879E977E70ED78BBDF7218 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FF5E66EAC472A1CA3FB71D79878C9A0 /* youtube-ios-player-helper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3335A2B778ECC54CF418167629C78627 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468241CF523EC8080C13CB4DCE10CCEA /* Pods-SingtoSleepUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E074F94C7CEC4C973C68E19F874863C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556841BF8CCB00D9BD5072B955E8259D /* Pods-SingtoSleepTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C0EA91C1D0EB5098144B94B2550830F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FE3A56CF46FD3985A719C1D04ACAEE7 /* Pods-SingtoSleep-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47D3159145C25BC93B01F9F2DE82695 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9081A24ECEEA4A82CB20D2256B71193 /* youtube-ios-player-helper-umbrella.h in Headers */,
+				5FB6600A24FF4AEA512DB51C8D031956 /* YTPlayerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3AE046BCCFC98CC039FF8159189F2241 /* Pods-SingtoSleepUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E428A822899452AB13E46B441068D3B /* Build configuration list for PBXNativeTarget "Pods-SingtoSleepUITests" */;
+			buildPhases = (
+				42B7D8555EE2DAD8AC9EC02558229790 /* Sources */,
+				1C65D7AE79C933A08C1DB8FB1EF5320C /* Frameworks */,
+				3335A2B778ECC54CF418167629C78627 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SingtoSleepUITests";
+			productName = "Pods-SingtoSleepUITests";
+			productReference = C3987182BF3AB8A211574DD2C329CB28 /* Pods_SingtoSleepUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		586A0248CDE8EDF280026D26D1CB8B50 /* youtube-ios-player-helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D9BB2DBAFA2E6C155AC30A061AADF5 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper" */;
+			buildPhases = (
+				6CC587DDFE3E9C04980198C235360639 /* Sources */,
+				D37D65BDE9D08CE27B5DFF27E09D0E63 /* Frameworks */,
+				F47D3159145C25BC93B01F9F2DE82695 /* Headers */,
+				B067AD8F157CA6689497737EFFB15B09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "youtube-ios-player-helper";
+			productName = "youtube-ios-player-helper";
+			productReference = F9F59A97D2B7D622207E857CE50D5211 /* youtube_ios_player_helper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F81D96CD09CB98ABD5E017E6D687C15 /* Pods-SingtoSleep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A620090A196CA3900177B5196FE8488B /* Build configuration list for PBXNativeTarget "Pods-SingtoSleep" */;
+			buildPhases = (
+				517D547A240FC5675E40C8FB2549DAB3 /* Sources */,
+				C3B04B41F3BFC0E50011631A03A8395D /* Frameworks */,
+				9C0EA91C1D0EB5098144B94B2550830F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F2C9507DBE4CE883EE9389309C83AD6 /* PBXTargetDependency */,
+			);
+			name = "Pods-SingtoSleep";
+			productName = "Pods-SingtoSleep";
+			productReference = 22B25D4475481AE07050F0BABA60025F /* Pods_SingtoSleep.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB5370984EC04ED880C57E55EF567C5A /* Pods-SingtoSleepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE950DD78F59AC0022446662CBD4EFCF /* Build configuration list for PBXNativeTarget "Pods-SingtoSleepTests" */;
+			buildPhases = (
+				E054CEB1B0D0083ABAD426C26EA3C82B /* Sources */,
+				1AF1DEF9EF0AE502ED79F13E5A69D00E /* Frameworks */,
+				8E074F94C7CEC4C973C68E19F874863C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SingtoSleepTests";
+			productName = "Pods-SingtoSleepTests";
+			productReference = F428E02A6F38E2DC59BA7DCCB9722AE1 /* Pods_SingtoSleepTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8CEB3FCBC8C630D81264EE034DDACA26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F81D96CD09CB98ABD5E017E6D687C15 /* Pods-SingtoSleep */,
+				DB5370984EC04ED880C57E55EF567C5A /* Pods-SingtoSleepTests */,
+				3AE046BCCFC98CC039FF8159189F2241 /* Pods-SingtoSleepUITests */,
+				586A0248CDE8EDF280026D26D1CB8B50 /* youtube-ios-player-helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B067AD8F157CA6689497737EFFB15B09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BB6234ECB5A309837736662C4B1BCF /* Assets.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42B7D8555EE2DAD8AC9EC02558229790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EED7DCFE511A963B8F911A1943E61E5 /* Pods-SingtoSleepUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517D547A240FC5675E40C8FB2549DAB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F490E060DF6395F18D73403999ACAE6 /* Pods-SingtoSleep-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CC587DDFE3E9C04980198C235360639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCD04112ED423FD9353A4231F06FC52 /* youtube-ios-player-helper-dummy.m in Sources */,
+				A991CB0F48E6F59A3BC30F21DE5B177E /* YTPlayerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E054CEB1B0D0083ABAD426C26EA3C82B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD998EDCA14314C4DCF0F47882DA7794 /* Pods-SingtoSleepTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F2C9507DBE4CE883EE9389309C83AD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "youtube-ios-player-helper";
+			target = 586A0248CDE8EDF280026D26D1CB8B50 /* youtube-ios-player-helper */;
+			targetProxy = 570CB0973263EA15E9455CBE27088CD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0170663EE2EC490E5F30AE94F899A218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7EC547EDE57104D8822189323406DBA /* youtube-ios-player-helper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = youtube_ios_player_helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		211BC860A8FCEFD1BA0E040A8B57C3D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26E41EE1D140CA57A77F47A6AC7531D /* Pods-SingtoSleep.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SingtoSleep/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SingtoSleep/Pods-SingtoSleep.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SingtoSleep;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34EE434B6FCBBD0180A75096B4165B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B37214481FFB95EDBA5BC510AB7D8C8 /* Pods-SingtoSleep.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SingtoSleep/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SingtoSleep/Pods-SingtoSleep.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SingtoSleep;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51BEAA5A287B1F08422E38D2EBFA8656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3B2C30CEE858D98E5A57920DF7E68E5 /* Pods-SingtoSleepTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SingtoSleepTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SingtoSleepTests/Pods-SingtoSleepTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SingtoSleepTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7888DA13145F6278A3E57D3B948D1F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14AC9E01389813F928EC47F198D8D811 /* Pods-SingtoSleepUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SingtoSleepUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SingtoSleepUITests/Pods-SingtoSleepUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SingtoSleepUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D025B5D3A21B65701FB76A26C69DA13C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F79C83872FA2807B7AB0BC421524A63 /* Pods-SingtoSleepTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SingtoSleepTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SingtoSleepTests/Pods-SingtoSleepTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SingtoSleepTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F967BD42B424FE813FC47EBC64E3CFD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7235E53C3146E2CB55F0292AB4D4C7A0 /* Pods-SingtoSleepUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SingtoSleepUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SingtoSleepUITests/Pods-SingtoSleepUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SingtoSleepUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB8B2D296A90A7332FD8EE4D9292FEC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7EC547EDE57104D8822189323406DBA /* youtube-ios-player-helper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = youtube_ios_player_helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E428A822899452AB13E46B441068D3B /* Build configuration list for PBXNativeTarget "Pods-SingtoSleepUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7888DA13145F6278A3E57D3B948D1F7 /* Debug */,
+				F967BD42B424FE813FC47EBC64E3CFD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D9BB2DBAFA2E6C155AC30A061AADF5 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB8B2D296A90A7332FD8EE4D9292FEC8 /* Debug */,
+				0170663EE2EC490E5F30AE94F899A218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A620090A196CA3900177B5196FE8488B /* Build configuration list for PBXNativeTarget "Pods-SingtoSleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				211BC860A8FCEFD1BA0E040A8B57C3D6 /* Debug */,
+				34EE434B6FCBBD0180A75096B4165B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE950DD78F59AC0022446662CBD4EFCF /* Build configuration list for PBXNativeTarget "Pods-SingtoSleepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51BEAA5A287B1F08422E38D2EBFA8656 /* Debug */,
+				D025B5D3A21B65701FB76A26C69DA13C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

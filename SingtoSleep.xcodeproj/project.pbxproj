@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5001CE33124B331CB95AC6D3 /* Pods_SingtoSleepTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A41766294597AFDE24FA7E /* Pods_SingtoSleepTests.framework */; };
 		51EA0B331DA5E927005E9537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA0B321DA5E927005E9537 /* AppDelegate.swift */; };
 		51EA0B351DA5E927005E9537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA0B341DA5E927005E9537 /* ViewController.swift */; };
 		51EA0B381DA5E927005E9537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51EA0B361DA5E927005E9537 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		51EA0B3D1DA5E927005E9537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51EA0B3B1DA5E927005E9537 /* LaunchScreen.storyboard */; };
 		51EA0B481DA5E927005E9537 /* SingtoSleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA0B471DA5E927005E9537 /* SingtoSleepTests.swift */; };
 		51EA0B531DA5E927005E9537 /* SingtoSleepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA0B521DA5E927005E9537 /* SingtoSleepUITests.swift */; };
+		62FE603B4BA9C07B1E42D569 /* Pods_SingtoSleepUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168C13ADEF666BA4BACB5983 /* Pods_SingtoSleepUITests.framework */; };
+		87456B124D8F4095CF3B5979 /* Pods_SingtoSleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8180BAD4D081BD6A51F7BB0D /* Pods_SingtoSleep.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B648CBAA6F4C5AD9D9C72C8 /* Pods-SingtoSleepTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingtoSleepTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingtoSleepTests/Pods-SingtoSleepTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D728F3FC7FD27C8EB6CFB5E /* Pods-SingtoSleepTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingtoSleepTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingtoSleepTests/Pods-SingtoSleepTests.release.xcconfig"; sourceTree = "<group>"; };
+		168C13ADEF666BA4BACB5983 /* Pods_SingtoSleepUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingtoSleepUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4201F4BA83FC6B9E903C32C3 /* Pods-SingtoSleepUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingtoSleepUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingtoSleepUITests/Pods-SingtoSleepUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C2715310E09594760809DB5 /* Pods-SingtoSleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingtoSleep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingtoSleep/Pods-SingtoSleep.debug.xcconfig"; sourceTree = "<group>"; };
 		51EA0B2F1DA5E927005E9537 /* SingtoSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingtoSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EA0B321DA5E927005E9537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51EA0B341DA5E927005E9537 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		51EA0B4E1DA5E927005E9537 /* SingtoSleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingtoSleepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EA0B521DA5E927005E9537 /* SingtoSleepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingtoSleepUITests.swift; sourceTree = "<group>"; };
 		51EA0B541DA5E927005E9537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D89CCC7E4C59C8F0FF1B02 /* Pods-SingtoSleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingtoSleep.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingtoSleep/Pods-SingtoSleep.release.xcconfig"; sourceTree = "<group>"; };
+		8180BAD4D081BD6A51F7BB0D /* Pods_SingtoSleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingtoSleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A41766294597AFDE24FA7E /* Pods_SingtoSleepTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingtoSleepTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3766EF2D93CA643D04A0D1C /* Pods-SingtoSleepUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingtoSleepUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingtoSleepUITests/Pods-SingtoSleepUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87456B124D8F4095CF3B5979 /* Pods_SingtoSleep.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5001CE33124B331CB95AC6D3 /* Pods_SingtoSleepTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62FE603B4BA9C07B1E42D569 /* Pods_SingtoSleepUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				51EA0B461DA5E927005E9537 /* SingtoSleepTests */,
 				51EA0B511DA5E927005E9537 /* SingtoSleepUITests */,
 				51EA0B301DA5E927005E9537 /* Products */,
+				54D2C26283A84D8AD0ED26C9 /* Pods */,
+				F509D4A7FADFA9854A37FAA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = SingtoSleepUITests;
 			sourceTree = "<group>";
 		};
+		54D2C26283A84D8AD0ED26C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C2715310E09594760809DB5 /* Pods-SingtoSleep.debug.xcconfig */,
+				80D89CCC7E4C59C8F0FF1B02 /* Pods-SingtoSleep.release.xcconfig */,
+				0B648CBAA6F4C5AD9D9C72C8 /* Pods-SingtoSleepTests.debug.xcconfig */,
+				0D728F3FC7FD27C8EB6CFB5E /* Pods-SingtoSleepTests.release.xcconfig */,
+				4201F4BA83FC6B9E903C32C3 /* Pods-SingtoSleepUITests.debug.xcconfig */,
+				F3766EF2D93CA643D04A0D1C /* Pods-SingtoSleepUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F509D4A7FADFA9854A37FAA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8180BAD4D081BD6A51F7BB0D /* Pods_SingtoSleep.framework */,
+				E6A41766294597AFDE24FA7E /* Pods_SingtoSleepTests.framework */,
+				168C13ADEF666BA4BACB5983 /* Pods_SingtoSleepUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51EA0B571DA5E927005E9537 /* Build configuration list for PBXNativeTarget "SingtoSleep" */;
 			buildPhases = (
+				A6717233A4FBAAB658141FCE /* [CP] Check Pods Manifest.lock */,
 				51EA0B2B1DA5E926005E9537 /* Sources */,
 				51EA0B2C1DA5E926005E9537 /* Frameworks */,
 				51EA0B2D1DA5E926005E9537 /* Resources */,
+				1409B0A8E77DB3F75F8C723A /* [CP] Embed Pods Frameworks */,
+				FEEAC6B7FAE8C955ABB58E9D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51EA0B5A1DA5E927005E9537 /* Build configuration list for PBXNativeTarget "SingtoSleepTests" */;
 			buildPhases = (
+				06CFAEFEE032C75F6529EF44 /* [CP] Check Pods Manifest.lock */,
 				51EA0B3F1DA5E927005E9537 /* Sources */,
 				51EA0B401DA5E927005E9537 /* Frameworks */,
 				51EA0B411DA5E927005E9537 /* Resources */,
+				4D0A756D160B86CCD715DDEF /* [CP] Embed Pods Frameworks */,
+				19A1F54F81373B8F37F7BB60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51EA0B5D1DA5E927005E9537 /* Build configuration list for PBXNativeTarget "SingtoSleepUITests" */;
 			buildPhases = (
+				C77E287E88B43360ED05FCD5 /* [CP] Check Pods Manifest.lock */,
 				51EA0B4A1DA5E927005E9537 /* Sources */,
 				51EA0B4B1DA5E927005E9537 /* Frameworks */,
 				51EA0B4C1DA5E927005E9537 /* Resources */,
+				4714BC858ED94226330B9083 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +298,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06CFAEFEE032C75F6529EF44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1409B0A8E77DB3F75F8C723A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingtoSleep/Pods-SingtoSleep-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19A1F54F81373B8F37F7BB60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingtoSleepTests/Pods-SingtoSleepTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4714BC858ED94226330B9083 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingtoSleepUITests/Pods-SingtoSleepUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D0A756D160B86CCD715DDEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingtoSleepTests/Pods-SingtoSleepTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6717233A4FBAAB658141FCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C77E287E88B43360ED05FCD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FEEAC6B7FAE8C955ABB58E9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingtoSleep/Pods-SingtoSleep-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51EA0B2B1DA5E926005E9537 /* Sources */ = {
@@ -399,6 +570,7 @@
 		};
 		51EA0B581DA5E927005E9537 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C2715310E09594760809DB5 /* Pods-SingtoSleep.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SingtoSleep/Info.plist;
@@ -410,6 +582,7 @@
 		};
 		51EA0B591DA5E927005E9537 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D89CCC7E4C59C8F0FF1B02 /* Pods-SingtoSleep.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SingtoSleep/Info.plist;
@@ -421,6 +594,7 @@
 		};
 		51EA0B5B1DA5E927005E9537 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B648CBAA6F4C5AD9D9C72C8 /* Pods-SingtoSleepTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SingtoSleepTests/Info.plist;
@@ -433,6 +607,7 @@
 		};
 		51EA0B5C1DA5E927005E9537 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D728F3FC7FD27C8EB6CFB5E /* Pods-SingtoSleepTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SingtoSleepTests/Info.plist;
@@ -445,6 +620,7 @@
 		};
 		51EA0B5E1DA5E927005E9537 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4201F4BA83FC6B9E903C32C3 /* Pods-SingtoSleepUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SingtoSleepUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +632,7 @@
 		};
 		51EA0B5F1DA5E927005E9537 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3766EF2D93CA643D04A0D1C /* Pods-SingtoSleepUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SingtoSleepUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +661,7 @@
 				51EA0B591DA5E927005E9537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51EA0B5A1DA5E927005E9537 /* Build configuration list for PBXNativeTarget "SingtoSleepTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +670,7 @@
 				51EA0B5C1DA5E927005E9537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51EA0B5D1DA5E927005E9537 /* Build configuration list for PBXNativeTarget "SingtoSleepUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +679,7 @@
 				51EA0B5F1DA5E927005E9537 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
