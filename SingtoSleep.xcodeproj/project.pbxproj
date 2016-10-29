@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5001CE33124B331CB95AC6D3 /* Pods_SingtoSleepTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A41766294597AFDE24FA7E /* Pods_SingtoSleepTests.framework */; };
+		51C45FBB1DC567890018F310 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C45FBA1DC567890018F310 /* VideoViewController.swift */; };
 		51EA0B331DA5E927005E9537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA0B321DA5E927005E9537 /* AppDelegate.swift */; };
 		51EA0B351DA5E927005E9537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA0B341DA5E927005E9537 /* ViewController.swift */; };
 		51EA0B381DA5E927005E9537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51EA0B361DA5E927005E9537 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		168C13ADEF666BA4BACB5983 /* Pods_SingtoSleepUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingtoSleepUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4201F4BA83FC6B9E903C32C3 /* Pods-SingtoSleepUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingtoSleepUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingtoSleepUITests/Pods-SingtoSleepUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C2715310E09594760809DB5 /* Pods-SingtoSleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingtoSleep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingtoSleep/Pods-SingtoSleep.debug.xcconfig"; sourceTree = "<group>"; };
+		51C45FBA1DC567890018F310 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		51EA0B2F1DA5E927005E9537 /* SingtoSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingtoSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EA0B321DA5E927005E9537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51EA0B341DA5E927005E9537 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				51EA0B391DA5E927005E9537 /* Assets.xcassets */,
 				51EA0B3B1DA5E927005E9537 /* LaunchScreen.storyboard */,
 				51EA0B3E1DA5E927005E9537 /* Info.plist */,
+				51C45FBA1DC567890018F310 /* VideoViewController.swift */,
 			);
 			path = SingtoSleep;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			files = (
 				51EA0B351DA5E927005E9537 /* ViewController.swift in Sources */,
 				51EA0B331DA5E927005E9537 /* AppDelegate.swift in Sources */,
+				51C45FBB1DC567890018F310 /* VideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
