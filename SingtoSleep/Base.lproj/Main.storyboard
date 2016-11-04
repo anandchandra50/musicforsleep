@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="1117" y="387"/>
         </scene>
-        <!--View Controller-->
+        <!--Video View Controller-->
         <scene sceneID="ZFv-zQ-K5p">
             <objects>
-                <viewController id="rCw-Ma-ZQh" sceneMemberID="viewController">
+                <viewController id="rCw-Ma-ZQh" customClass="VideoViewController" customModule="SingtoSleep" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J3R-KS-FM9"/>
                         <viewControllerLayoutGuide type="bottom" id="CKi-E2-Kkh"/>
@@ -72,7 +72,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h4-DP-Xpk" customClass="YTPlayerView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h4-DP-Xpk" customClass="YouTubePlayerView" customModule="YouTubePlayer">
                                 <rect key="frame" x="30" y="30" width="540" height="560"/>
                                 <color key="backgroundColor" red="1" green="0.2120572751" blue="0.22625692089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -85,6 +85,9 @@
                             <constraint firstItem="6h4-DP-Xpk" firstAttribute="leading" secondItem="oh9-WB-N6e" secondAttribute="leadingMargin" constant="10" id="nqY-pS-zKk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="videoPlayer" destination="6h4-DP-Xpk" id="iC9-LV-sn9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMD-Ou-H5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
