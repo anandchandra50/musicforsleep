@@ -13,6 +13,9 @@ class RatingTableViewCell: UITableViewCell {
 
     @IBOutlet weak var ratingVideo: YouTubePlayerView!
     @IBOutlet weak var ratingSlider: UISlider!
+    
+    var videoID: String?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
