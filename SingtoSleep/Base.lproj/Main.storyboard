@@ -6,26 +6,67 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Library Table Table View Controller-->
+        <!--Songs-->
         <scene sceneID="a4d-g4-WeA">
             <objects>
                 <tableViewController id="tkd-Xt-Lgh" customClass="LibraryTableTableViewController" customModule="SingtoSleep" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7zu-En-VjV">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="136" sectionHeaderHeight="28" sectionFooterHeight="28" id="7zu-En-VjV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9HQ-qb-GMz">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="songCell" rowHeight="136" id="9HQ-qb-GMz" customClass="SongTableViewCell" customModule="SingtoSleep" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="136"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9HQ-qb-GMz" id="vyu-E4-u6O">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SVE-yR-XPn">
+                                            <rect key="frame" x="8" y="8" width="120" height="120"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="PTk-0w-ikO"/>
+                                                <constraint firstAttribute="height" constant="120" id="wzq-Xo-Fuy"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUE-fj-8Px">
+                                            <rect key="frame" x="136" y="8" width="231" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="yKO-mk-k3r"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UD9-UY-Om4">
+                                            <rect key="frame" x="136" y="37" width="231" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="a7i-JQ-wKU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="SVE-yR-XPn" firstAttribute="top" secondItem="vyu-E4-u6O" secondAttribute="top" constant="8" id="6P7-VJ-zbO"/>
+                                        <constraint firstItem="SVE-yR-XPn" firstAttribute="leading" secondItem="vyu-E4-u6O" secondAttribute="leading" constant="8" id="8vG-A0-H28"/>
+                                        <constraint firstItem="gUE-fj-8Px" firstAttribute="leading" secondItem="SVE-yR-XPn" secondAttribute="trailing" constant="8" id="EDl-aS-gfh"/>
+                                        <constraint firstItem="UD9-UY-Om4" firstAttribute="leading" secondItem="SVE-yR-XPn" secondAttribute="trailing" constant="8" id="UWF-jU-3r6"/>
+                                        <constraint firstAttribute="trailing" secondItem="gUE-fj-8Px" secondAttribute="trailing" constant="8" id="WaT-d7-9T9"/>
+                                        <constraint firstItem="gUE-fj-8Px" firstAttribute="top" secondItem="vyu-E4-u6O" secondAttribute="top" constant="8" id="Zwe-6B-mdH"/>
+                                        <constraint firstItem="UD9-UY-Om4" firstAttribute="top" secondItem="gUE-fj-8Px" secondAttribute="bottom" constant="8" id="vYO-1G-4s5"/>
+                                        <constraint firstAttribute="trailing" secondItem="UD9-UY-Om4" secondAttribute="trailing" constant="8" id="yfr-rB-7L5"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="songArtistLabel" destination="UD9-UY-Om4" id="eHq-I3-is0"/>
+                                    <outlet property="songImageView" destination="SVE-yR-XPn" id="HgU-BS-AfE"/>
+                                    <outlet property="songTitleLabel" destination="gUE-fj-8Px" id="drk-mz-BcF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,44 +74,32 @@
                             <outlet property="delegate" destination="tkd-Xt-Lgh" id="UYJ-ic-rRN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="wTi-EL-RU2"/>
+                    <navigationItem key="navigationItem" title="Songs" id="wTi-EL-RU2"/>
+                    <connections>
+                        <segue destination="vmV-cE-98o" kind="show" identifier="showPlayer" id="6z0-Aw-G4Y"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4w8-31-SnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256.8" y="434.93253373313348"/>
+            <point key="canvasLocation" x="913" y="431"/>
         </scene>
-        <!--Video View Controller-->
-        <scene sceneID="ZFv-zQ-K5p">
+        <!--Player View Controller-->
+        <scene sceneID="hq1-vZ-1pw">
             <objects>
-                <viewController id="rCw-Ma-ZQh" customClass="VideoViewController" customModule="SingtoSleep" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vmV-cE-98o" customClass="PlayerViewController" customModule="SingtoSleep" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="J3R-KS-FM9"/>
-                        <viewControllerLayoutGuide type="bottom" id="CKi-E2-Kkh"/>
+                        <viewControllerLayoutGuide type="top" id="rfJ-7o-q23"/>
+                        <viewControllerLayoutGuide type="bottom" id="jZE-do-gSu"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oh9-WB-N6e">
+                    <view key="view" contentMode="scaleToFill" id="3Ia-RR-wpD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6h4-DP-Xpk" customClass="YouTubePlayerView" customModule="YouTubePlayer">
-                                <rect key="frame" x="26" y="30" width="323" height="627"/>
-                                <color key="backgroundColor" red="1" green="0.2120572751" blue="0.22625692089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="CKi-E2-Kkh" firstAttribute="top" secondItem="6h4-DP-Xpk" secondAttribute="bottom" constant="10" id="7Xk-gG-ZIm"/>
-                            <constraint firstItem="6h4-DP-Xpk" firstAttribute="top" secondItem="J3R-KS-FM9" secondAttribute="bottom" constant="10" id="EQk-1X-8Ks"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6h4-DP-Xpk" secondAttribute="trailing" constant="10" id="g3X-uk-3sd"/>
-                            <constraint firstItem="6h4-DP-Xpk" firstAttribute="leading" secondItem="oh9-WB-N6e" secondAttribute="leadingMargin" constant="10" id="nqY-pS-zKk"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="videoPlayer" destination="6h4-DP-Xpk" id="iC9-LV-sn9"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SMD-Ou-H5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xml-0B-EtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2078" y="435"/>
+            <point key="canvasLocation" x="1716" y="431"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o4Y-2H-Ab2">
@@ -88,7 +117,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cL-l1-GPD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="489" y="435"/>
+            <point key="canvasLocation" x="127" y="432"/>
         </scene>
     </scenes>
 </document>

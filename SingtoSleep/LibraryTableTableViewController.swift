@@ -9,6 +9,8 @@
 import UIKit
 
 class LibraryTableTableViewController: UITableViewController {
+    
+    var videos: [NSString] = ["RZrcaOnqu-E"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,25 +29,28 @@ class LibraryTableTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return videos.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "songCell", for: indexPath) as! SongTableViewCell
+        
+        let row = indexPath.row
+        
+        cell.songTitleLabel.text = "Test Song Title"
+        cell.songArtistLabel.text = "Test Artist Label"
+    
+        // Replace later to load image asynchronously, LazyTableImages?
+        let thumbnailURL = "https://img.youtube.com/vi/\(videos[row])/default.jpg"
+        
+        if let data = NSData(contentsOf: URL(string: thumbnailURL)!) {
+            cell.songImageView.image = UIImage(data: data as Data)
+        }
+        
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -82,14 +87,23 @@ class LibraryTableTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
+     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showPlayer", sender: self)
+     }
+     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showPlayer") {
+            let playerViewController = segue.destination as! PlayerViewController
+            let indexPath = tableView.indexPathForSelectedRow!
+            playerViewController.trackID = indexPath.row
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
