@@ -2,7 +2,7 @@
 platform :ios, "9.0"
 use_frameworks!
 target 'SingtoSleep' do
-pod 'YouTubePlayer'
+pod "youtube-ios-player-helper", "~> 0.1"
 end
 target 'SingtoSleepTests' do
 end
