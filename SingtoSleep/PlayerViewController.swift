@@ -22,12 +22,13 @@ class PlayerViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-         let playerVars = ["playsinline": 1]
+        self.automaticallyAdjustsScrollViewInsets = false
         
-         if let songID = library[trackID]["id"] {
-             playerView.load(withVideoId: songID, playerVars: playerVars)
-         }
+        let playerVars = ["playsinline": 1]
         
+        if let songID = library[trackID]["id"] {
+            playerView.load(withVideoId: songID, playerVars: playerVars)
+        }
     }
 
     override func didReceiveMemoryWarning() {
