@@ -39,8 +39,9 @@ class LibraryTableTableViewController: UITableViewController {
         
         let row = indexPath.row
         
-        cell.songTitleLabel.text = "Placeholder Title"
-        cell.songArtistLabel.text = "Placeholder Artist"
+        if let genre = library[row]["genre"] {
+            cell.songTitleLabel.text = genre
+        }
     
         // Replace later to load image asynchronously, LazyTableImages?
         if let songID = library[row]["id"] {

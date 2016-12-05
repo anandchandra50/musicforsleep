@@ -10,7 +10,7 @@ import Foundation
 
 struct MusicLibrary {
     
-    var library = [["id": "RZrcaOnqu-E"],
-                   ["id": "xIrkdJnsLPU"]]
+    var library = [["id": "lasWefVUCsI", "genre": "Rain"],
+                   ["id": "vCYk9CRx0g8", "genre": "Piano"]]
     
 }
