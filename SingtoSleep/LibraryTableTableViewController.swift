@@ -10,7 +10,7 @@ import UIKit
 
 class LibraryTableTableViewController: UITableViewController {
     
-    var videos: [NSString] = ["RZrcaOnqu-E"]
+    var library = MusicLibrary().library
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class LibraryTableTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return videos.count
+        return library.count
     }
 
     
@@ -39,16 +39,18 @@ class LibraryTableTableViewController: UITableViewController {
         
         let row = indexPath.row
         
-        cell.songTitleLabel.text = "Test Song Title"
-        cell.songArtistLabel.text = "Test Artist Label"
+        cell.songTitleLabel.text = "Placeholder Title"
+        cell.songArtistLabel.text = "Placeholder Artist"
     
         // Replace later to load image asynchronously, LazyTableImages?
-        let thumbnailURL = "https://img.youtube.com/vi/\(videos[row])/default.jpg"
-        
-        if let data = NSData(contentsOf: URL(string: thumbnailURL)!) {
-            cell.songImageView.image = UIImage(data: data as Data)
+        if let songID = library[row]["id"] {
+            let thumbnailURL = "https://img.youtube.com/vi/\(songID)/default.jpg"
+            
+            if let data = NSData(contentsOf: URL(string: thumbnailURL)!) {
+                cell.songImageView.image = UIImage(data: data as Data)
+            }
         }
-        
+
         return cell
     }
 

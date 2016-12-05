@@ -94,12 +94,29 @@
                     <view key="view" contentMode="scaleToFill" id="3Ia-RR-wpD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptA-cI-K6x" customClass="YTPlayerView">
+                                <rect key="frame" x="8" y="72" width="359" height="280"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="me3-dR-zRa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ptA-cI-K6x" firstAttribute="leading" secondItem="3Ia-RR-wpD" secondAttribute="leading" constant="8" id="Nen-C0-Jn1"/>
+                            <constraint firstAttribute="trailing" secondItem="ptA-cI-K6x" secondAttribute="trailing" constant="8" id="Q3P-lp-iKd"/>
+                            <constraint firstItem="ptA-cI-K6x" firstAttribute="top" secondItem="rfJ-7o-q23" secondAttribute="bottom" constant="8" id="uua-eQ-o9y"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playerView" destination="ptA-cI-K6x" id="2Tq-V4-V9U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xml-0B-EtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="431"/>
+            <point key="canvasLocation" x="1716" y="430.43478260869568"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o4Y-2H-Ab2">

@@ -7,15 +7,27 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
 
 class PlayerViewController: UIViewController {
 
-    var trackID = 0;
+    var library = MusicLibrary().library
+    
+    var trackID: Int!;
+  
+    @IBOutlet weak var playerView: YTPlayerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+         let playerVars = ["playsinline": 1]
+        
+         if let songID = library[trackID]["id"] {
+             playerView.load(withVideoId: songID, playerVars: playerVars)
+         }
+        
     }
 
     override func didReceiveMemoryWarning() {
