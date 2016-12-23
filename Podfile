@@ -2,7 +2,7 @@
 platform :ios, "9.0"
 use_frameworks!
 target 'SingtoSleep' do
-pod 'YouTubePlayer'
+pod 'youtube-ios-player-helper', :git=>'https://github.com/youtube/youtube-ios-player-helper', :commit=>'head'
 end
 target 'SingtoSleepTests' do
 end
