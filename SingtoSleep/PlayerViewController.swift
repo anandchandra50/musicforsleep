@@ -3,7 +3,7 @@
 //  SingtoSleep
 //
 //  Created by Kevin Li on 12/4/16.
-//  Copyright © 2016 Anand Chandra. All rights reserved.
+//  Copyright © 2016 Kevin Li. All rights reserved.
 //
 
 import UIKit
@@ -26,7 +26,7 @@ class PlayerViewController: UIViewController {
         
         let playerVars = ["playsinline": 1]
         
-        if let songID = library[trackID]["id"] {
+        if let songID = library[trackID]["videoID"] {
             playerView.load(withVideoId: songID, playerVars: playerVars)
         }
     }

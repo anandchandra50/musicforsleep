@@ -1,18 +1,15 @@
 //
-//  SongTableViewCell.swift
+//  RatingTableViewCell.swift
 //  SingtoSleep
 //
-//  Created by Kevin Li on 12/4/16.
-//  Copyright © 2016 Anand Chandra. All rights reserved.
+//  Created by Kevin Li on 1/1/17.
+//  Copyright © 2017 Kevin Li. All rights reserved.
 //
 
 import UIKit
 
-class SongTableViewCell: UITableViewCell {
+class RatingTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var songTitleLabel: UILabel!
-    @IBOutlet weak var songImageView: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,4 +20,5 @@ class SongTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+
 }

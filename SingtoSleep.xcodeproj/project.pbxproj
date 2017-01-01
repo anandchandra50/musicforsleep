@@ -11,6 +11,8 @@
 		1E5297EB1DF4D03600F212E3 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5297EA1DF4D03600F212E3 /* SongTableViewCell.swift */; };
 		1E5297ED1DF4D25F00F212E3 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5297EC1DF4D25F00F212E3 /* PlayerViewController.swift */; };
 		1E5297F01DF4F6D400F212E3 /* MusicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5297EF1DF4F6D400F212E3 /* MusicLibrary.swift */; };
+		1EEEF9FE1E1985400087EE86 /* RatingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEF9FD1E1985400087EE86 /* RatingTableViewController.swift */; };
+		1EEEFA001E1985F60087EE86 /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEEF9FF1E1985F60087EE86 /* RatingTableViewCell.swift */; };
 		5001CE33124B331CB95AC6D3 /* Pods_SingtoSleepTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A41766294597AFDE24FA7E /* Pods_SingtoSleepTests.framework */; };
 		51EA0B331DA5E927005E9537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA0B321DA5E927005E9537 /* AppDelegate.swift */; };
 		51EA0B381DA5E927005E9537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51EA0B361DA5E927005E9537 /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 		1E5297EA1DF4D03600F212E3 /* SongTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
 		1E5297EC1DF4D25F00F212E3 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		1E5297EF1DF4F6D400F212E3 /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
+		1EEEF9FD1E1985400087EE86 /* RatingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTableViewController.swift; sourceTree = "<group>"; };
+		1EEEF9FF1E1985F60087EE86 /* RatingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
 		4201F4BA83FC6B9E903C32C3 /* Pods-SingtoSleepUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingtoSleepUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingtoSleepUITests/Pods-SingtoSleepUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C2715310E09594760809DB5 /* Pods-SingtoSleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingtoSleep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingtoSleep/Pods-SingtoSleep.debug.xcconfig"; sourceTree = "<group>"; };
 		51EA0B2F1DA5E927005E9537 /* SingtoSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingtoSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +104,7 @@
 			children = (
 				1E5297E81DF4CF6900F212E3 /* LibraryTableTableViewController.swift */,
 				1E5297EC1DF4D25F00F212E3 /* PlayerViewController.swift */,
+				1EEEF9FD1E1985400087EE86 /* RatingTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				1E5297EA1DF4D03600F212E3 /* SongTableViewCell.swift */,
+				1EEEF9FF1E1985F60087EE86 /* RatingTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -270,7 +276,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Anand Chandra";
+				ORGANIZATIONNAME = "Kevin Li";
 				TargetAttributes = {
 					51EA0B2E1DA5E926005E9537 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -472,6 +478,8 @@
 				51EA0B331DA5E927005E9537 /* AppDelegate.swift in Sources */,
 				1E5297E91DF4CF6900F212E3 /* LibraryTableTableViewController.swift in Sources */,
 				1E5297F01DF4F6D400F212E3 /* MusicLibrary.swift in Sources */,
+				1EEEF9FE1E1985400087EE86 /* RatingTableViewController.swift in Sources */,
+				1EEEFA001E1985F60087EE86 /* RatingTableViewCell.swift in Sources */,
 				1E5297ED1DF4D25F00F212E3 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
