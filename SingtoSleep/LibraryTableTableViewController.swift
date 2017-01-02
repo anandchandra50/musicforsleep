@@ -22,7 +22,12 @@ class LibraryTableTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         // If the user is opening the app for the first time, open the rating table
-        // performSegue(withIdentifier: "showRatingTable", sender: nil);
+        if (!UserDefaults.standard.bool(forKey: "hasLaunchedOnce")) {
+            UserDefaults.standard.set(true, forKey: "hasLaunchedOnce")
+            UserDefaults.standard.synchronize()
+            
+            performSegue(withIdentifier: "showRatingTable", sender: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,15 +38,18 @@ class LibraryTableTableViewController: UITableViewController {
     // MARK: - Table view header
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 80.0
+        return 60.0
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        // Create header at top of table to hold shuffle button so that it always stays at the top
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40.0))
+        headerView.backgroundColor = UIColor.white
         
         let shuffleButton = UIButton(frame: CGRect(x: (UIScreen.main.bounds.width - 250)/2, y: 10, width: 250, height: 40))
         shuffleButton.setTitle("Shuffle", for: UIControlState.normal)
         shuffleButton.backgroundColor = UIColor.green
+        shuffleButton.addTarget(self, action: #selector(shuffleButtonPressed), for: .touchUpInside)
         headerView.addSubview(shuffleButton)
         
         return headerView
@@ -110,6 +118,22 @@ class LibraryTableTableViewController: UITableViewController {
         return true
     }
     */
+    
+    // MARK: - General
+    
+    func shuffleButtonPressed() {
+        // Toggle shuffle, save value in UserDefaults
+        
+        if (!UserDefaults.standard.bool(forKey: "shuffle")) {
+            UserDefaults.standard.set(true, forKey: "shuffle")
+            print("Shuffle on")
+        } else {
+            UserDefaults.standard.set(false, forKey: "shuffle")
+            print("Shuffle off")
+        }
+        
+        UserDefaults.standard.synchronize()
+    }
 
     
     // MARK: - Navigation

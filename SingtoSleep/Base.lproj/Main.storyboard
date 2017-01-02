@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="136"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9HQ-qb-GMz" id="vyu-E4-u6O">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SVE-yR-XPn">
@@ -66,7 +66,7 @@
                     <navigationItem key="navigationItem" title="Songs" id="wTi-EL-RU2"/>
                     <connections>
                         <segue destination="vmV-cE-98o" kind="show" identifier="showPlayer" id="6z0-Aw-G4Y"/>
-                        <segue destination="mtB-oS-cdn" kind="presentation" identifier="showRatingTable" id="SA4-aN-WwN"/>
+                        <segue destination="mtB-oS-cdn" kind="show" identifier="showRatingTable" id="SA4-aN-WwN"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4w8-31-SnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
