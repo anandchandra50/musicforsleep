@@ -16,7 +16,7 @@ class PlayerViewController: UIViewController {
     var trackID: Int!;
   
     @IBOutlet weak var playerView: YTPlayerView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +37,12 @@ class PlayerViewController: UIViewController {
     }
     
 
+    @IBAction func nextSongButtonPressed(_ sender: Any) {
+    }
+    
+    @IBAction func previousSongButtonPressed(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

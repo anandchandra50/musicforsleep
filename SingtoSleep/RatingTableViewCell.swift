@@ -8,8 +8,17 @@
 
 import UIKit
 
-class RatingTableViewCell: UITableViewCell {
+import youtube_ios_player_helper
 
+class RatingTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var songTitleLabel: UILabel!
+    
+    @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var dislikeButton: UIButton!
+    
+    @IBOutlet weak var playerView: YTPlayerView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

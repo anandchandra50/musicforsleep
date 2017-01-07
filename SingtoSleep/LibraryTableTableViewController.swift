@@ -47,7 +47,7 @@ class LibraryTableTableViewController: UITableViewController {
         headerView.backgroundColor = UIColor.white
         
         let shuffleButton = UIButton(frame: CGRect(x: (UIScreen.main.bounds.width - 250)/2, y: 10, width: 250, height: 40))
-        shuffleButton.setTitle("Shuffle", for: UIControlState.normal)
+        shuffleButton.setTitle("Button", for: UIControlState.normal)
         shuffleButton.backgroundColor = UIColor.green
         shuffleButton.addTarget(self, action: #selector(shuffleButtonPressed), for: .touchUpInside)
         headerView.addSubview(shuffleButton)
@@ -63,7 +63,6 @@ class LibraryTableTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         let cell = tableView.dequeueReusableCell(withIdentifier: "songCell", for: indexPath) as! SongTableViewCell
         
         let row = indexPath.row
@@ -122,22 +121,28 @@ class LibraryTableTableViewController: UITableViewController {
     // MARK: - General
     
     func shuffleButtonPressed() {
-        // Toggle shuffle, save value in UserDefaults
         
-        if (!UserDefaults.standard.bool(forKey: "shuffle")) {
-            UserDefaults.standard.set(true, forKey: "shuffle")
-            print("Shuffle on")
-        } else {
-            UserDefaults.standard.set(false, forKey: "shuffle")
-            print("Shuffle off")
-        }
+        print("Button Pressed")
         
-        UserDefaults.standard.synchronize()
+//        // Toggle shuffle, save value in UserDefaults
+//        if (!UserDefaults.standard.bool(forKey: "shuffle")) {
+//            UserDefaults.standard.set(true, forKey: "shuffle")
+//            print("Shuffle on")
+//        } else {
+//            UserDefaults.standard.set(false, forKey: "shuffle")
+//            print("Shuffle off")
+//        }
+//        
+//        UserDefaults.standard.synchronize()
     }
 
     
     // MARK: - Navigation
 
+    @IBAction func tempButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "showRatingTable", sender: nil)
+    }
+    
      override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showPlayer", sender: self)
      }
@@ -153,9 +158,5 @@ class LibraryTableTableViewController: UITableViewController {
             let indexPath = tableView.indexPathForSelectedRow!
             playerViewController.trackID = indexPath.row
         }
-        
-
     }
-    
-
 }
