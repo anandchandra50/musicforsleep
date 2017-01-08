@@ -40,19 +40,37 @@ class RatingTableViewController: UITableViewController {
         
         let row = indexPath.row
         
+        // Set cell title
         if let genre = library[row]["genre"] {
             cell.songTitleLabel.text = genre
         }
         
+        // Set cell video
         let playerVars = ["playsinline": 1]
-        
         if let songID = library[row]["videoID"] {
             cell.playerView.load(withVideoId: songID, playerVars: playerVars)
         }
         
+        // Connect like/dislike buttons
+        cell.likeButton.tag = row
+        cell.dislikeButton.tag = row
+        
+        cell.likeButton.addTarget(self, action: #selector(likeButtonPressed), for: .touchUpInside)
+        cell.dislikeButton.addTarget(self, action: #selector(dislikeButtonPressed), for: .touchUpInside)
+        
         return cell
     }
  
+    // MARK: Rating System
+    
+    func likeButtonPressed(_ sender: UIButton) {
+        print("like \(sender.tag)")
+    }
+    
+    func dislikeButtonPressed(_ sender: UIButton) {
+        print("dislike \(sender.tag)")
+    }
+    
     /*
     // MARK: - Navigation
 
