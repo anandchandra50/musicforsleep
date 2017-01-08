@@ -121,10 +121,16 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uo3-C9-ZRX">
                                             <rect key="frame" x="136" y="53" width="45" height="30"/>
                                             <state key="normal" title="Dislike"/>
+                                            <state key="disabled">
+                                                <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sur-NI-aGX">
                                             <rect key="frame" x="228" y="53" width="46" height="30"/>
                                             <state key="normal" title="Like"/>
+                                            <state key="disabled">
+                                                <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
                                         </button>
                                     </subviews>
                                     <constraints>

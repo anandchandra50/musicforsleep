@@ -14,12 +14,8 @@ class RatingTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        self.tableView.allowsSelection = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +26,6 @@ class RatingTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return library.count
     }
 
@@ -58,16 +53,42 @@ class RatingTableViewController: UITableViewController {
         cell.likeButton.addTarget(self, action: #selector(likeButtonPressed), for: .touchUpInside)
         cell.dislikeButton.addTarget(self, action: #selector(dislikeButtonPressed), for: .touchUpInside)
         
+        // Check if the user has already rated the songs (Like = 1, Dislike = -1)
+        cell.likeButton.isEnabled = true
+        cell.dislikeButton.isEnabled = true
+        if (UserDefaults.standard.integer(forKey: "songWithID\(row)") == 1) {
+            cell.likeButton.isEnabled = false
+        } else if (UserDefaults.standard.integer(forKey: "songWithID\(row)") == -1) {
+            cell.dislikeButton.isEnabled = false
+        }
+        
         return cell
     }
  
     // MARK: Rating System
     
     func likeButtonPressed(_ sender: UIButton) {
+        // Set song as liked in UserDefaults
+        UserDefaults.standard.set(1, forKey: "songWithID\(sender.tag)")
+        UserDefaults.standard.synchronize()
+        
+        // Reload the cell to update buttons
+        let indexPath = IndexPath(item: sender.tag, section: 0)
+        self.tableView.reloadRows(at: [indexPath], with: .none)
+        
         print("like \(sender.tag)")
+        
     }
     
     func dislikeButtonPressed(_ sender: UIButton) {
+        // Set song as liked in UserDefaults
+        UserDefaults.standard.set(-1, forKey: "songWithID\(sender.tag)")
+        UserDefaults.standard.synchronize()
+        
+        // Reload the cell to update buttons
+        let indexPath = IndexPath(item: sender.tag, section: 0)
+        self.tableView.reloadRows(at: [indexPath], with: .none)
+        
         print("dislike \(sender.tag)")
     }
     
