@@ -54,12 +54,10 @@ class RatingTableViewController: UITableViewController {
         cell.dislikeButton.addTarget(self, action: #selector(dislikeButtonPressed), for: .touchUpInside)
         
         // Check if the user has already rated the songs (Like = 1, Dislike = -1)
-        cell.likeButton.isEnabled = true
-        cell.dislikeButton.isEnabled = true
-        if (UserDefaults.standard.integer(forKey: "songWithID\(row)") == 1) {
-            cell.likeButton.isEnabled = false
-        } else if (UserDefaults.standard.integer(forKey: "songWithID\(row)") == -1) {
-            cell.dislikeButton.isEnabled = false
+        if UserDefaults.standard.integer(forKey: "songWithID\(row)") == 1 {
+            cell.likeButton.titleLabel?.textColor = UIColor.green
+        } else if UserDefaults.standard.integer(forKey: "songWithID\(row)") == -1 {
+            cell.dislikeButton.titleLabel?.textColor = UIColor.red
         }
         
         return cell
@@ -68,8 +66,12 @@ class RatingTableViewController: UITableViewController {
     // MARK: Rating System
     
     func likeButtonPressed(_ sender: UIButton) {
-        // Set song as liked in UserDefaults
-        UserDefaults.standard.set(1, forKey: "songWithID\(sender.tag)")
+        // Set song as liked in UserDefaults, or set it to neutral if it was already liked
+        if UserDefaults.standard.integer(forKey: "songWithID\(sender.tag)") == 1 {
+            UserDefaults.standard.set(0, forKey: "songWithID\(sender.tag)")
+        } else {
+            UserDefaults.standard.set(1, forKey: "songWithID\(sender.tag)")
+        }
         UserDefaults.standard.synchronize()
         
         // Reload the cell to update buttons
@@ -81,8 +83,12 @@ class RatingTableViewController: UITableViewController {
     }
     
     func dislikeButtonPressed(_ sender: UIButton) {
-        // Set song as liked in UserDefaults
-        UserDefaults.standard.set(-1, forKey: "songWithID\(sender.tag)")
+        // Set song as disliked in UserDefaults, or set it to neutral if it was already disliked
+        if UserDefaults.standard.integer(forKey: "songWithID\(sender.tag)") == -1 {
+            UserDefaults.standard.set(0, forKey: "songWithID\(sender.tag)")
+        } else {
+            UserDefaults.standard.set(-1, forKey: "songWithID\(sender.tag)")
+        }
         UserDefaults.standard.synchronize()
         
         // Reload the cell to update buttons
