@@ -54,6 +54,8 @@ class RatingTableViewController: UITableViewController {
         cell.dislikeButton.addTarget(self, action: #selector(dislikeButtonPressed), for: .touchUpInside)
         
         // Check if the user has already rated the songs (Like = 1, Dislike = -1)
+        cell.likeButton.titleLabel?.textColor = self.view.tintColor
+        cell.dislikeButton.titleLabel?.textColor = self.view.tintColor
         if UserDefaults.standard.integer(forKey: "songWithID\(row)") == 1 {
             cell.likeButton.titleLabel?.textColor = UIColor.green
         } else if UserDefaults.standard.integer(forKey: "songWithID\(row)") == -1 {
