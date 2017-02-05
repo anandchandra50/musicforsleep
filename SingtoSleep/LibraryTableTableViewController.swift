@@ -47,7 +47,7 @@ class LibraryTableTableViewController: UITableViewController {
         headerView.backgroundColor = UIColor.white
         
         let shuffleButton = UIButton(frame: CGRect(x: (UIScreen.main.bounds.width - 250)/2, y: 10, width: 250, height: 40))
-        shuffleButton.setTitle("Button", for: UIControlState.normal)
+        shuffleButton.setTitle("shuffle", for: UIControlState.normal)
         shuffleButton.backgroundColor = UIColor.green
         shuffleButton.addTarget(self, action: #selector(shuffleButtonPressed), for: .touchUpInside)
         headerView.addSubview(shuffleButton)
