@@ -86,9 +86,13 @@ class LibraryTableTableViewController: UITableViewController {
     // MARK: - General
     
     func shuffleButtonPressed() {
-        
         print("Button Pressed")
+        //TODO:
+        //shuffle
+        //get rid of text
+        //reloading video every time
         
+
 //        // Toggle shuffle, save value in UserDefaults
 //        if (!UserDefaults.standard.bool(forKey: "shuffle")) {
 //            UserDefaults.standard.set(true, forKey: "shuffle")

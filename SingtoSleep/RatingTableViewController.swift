@@ -11,12 +11,13 @@ import UIKit
 class RatingTableViewController: UITableViewController {
 
     var library = MusicLibrary().library
+    let tableCells
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.allowsSelection = false
-        self.tableView.backgroundColor = UIColorFromHex(rgbValue: 0xe0e0e0, alpha: 1)
+        self.tableView.backgroundColor = UIColorFromHex(rgbValue: 0xf0f0f0, alpha: 1)
         
         
     }
@@ -52,7 +53,7 @@ class RatingTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ratingCell", for: indexPath) as! RatingTableViewCell
         
         let row = indexPath.row
-        
+
         // Set cell title
         if let genre = library[row]["genre"] {
             cell.songTitleLabel.text = genre
@@ -86,34 +87,50 @@ class RatingTableViewController: UITableViewController {
     // MARK: Rating System
     
     func likeButtonPressed(_ sender: UIButton) {
+        let indexPath = IndexPath(row: sender.tag, section: 0)
+        let cell = tableView.cellForRow(at: indexPath) as! RatingTableViewCell
+        
+        
         // Set song as liked in UserDefaults, or set it to neutral if it was already liked
         if UserDefaults.standard.integer(forKey: "songWithID\(sender.tag)") == 1 {
             UserDefaults.standard.set(0, forKey: "songWithID\(sender.tag)")
+            cell.likeButton.titleLabel?.textColor = self.view.tintColor
+            
         } else {
             UserDefaults.standard.set(1, forKey: "songWithID\(sender.tag)")
+            cell.likeButton.titleLabel?.textColor = UIColor.green
+
         }
         UserDefaults.standard.synchronize()
         
         // Reload the cell to update buttons
-        let indexPath = IndexPath(item: sender.tag, section: 0)
-        self.tableView.reloadRows(at: [indexPath], with: .none)
+        //let indexPath = IndexPath(item: sender.tag, section: 0)
+        //self.tableView.reloadRows(at: [indexPath], with: .none)
+        
         
         print("like \(sender.tag)")
+        print(UserDefaults.standard.integer(forKey: "songWithID\(sender.tag)"))
         
     }
     
     func dislikeButtonPressed(_ sender: UIButton) {
+        let indexPath = IndexPath(row: sender.tag, section: 0)
+        let cell = tableView.cellForRow(at: indexPath) as! RatingTableViewCell
         // Set song as disliked in UserDefaults, or set it to neutral if it was already disliked
         if UserDefaults.standard.integer(forKey: "songWithID\(sender.tag)") == -1 {
             UserDefaults.standard.set(0, forKey: "songWithID\(sender.tag)")
+            cell.dislikeButton.titleLabel?.textColor = self.view.tintColor
+
         } else {
             UserDefaults.standard.set(-1, forKey: "songWithID\(sender.tag)")
+            cell.dislikeButton.titleLabel?.textColor = UIColor.red
+
         }
         UserDefaults.standard.synchronize()
         
         // Reload the cell to update buttons
-        let indexPath = IndexPath(item: sender.tag, section: 0)
-        self.tableView.reloadRows(at: [indexPath], with: .none)
+        //let indexPath = IndexPath(item: sender.tag, section: 0)
+        //self.tableView.reloadRows(at: [indexPath], with: .none)
         
         print("dislike \(sender.tag)")
     }
