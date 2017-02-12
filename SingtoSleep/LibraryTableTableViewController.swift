@@ -91,6 +91,7 @@ class LibraryTableTableViewController: UITableViewController {
         //shuffle
         //get rid of text
         //reloading video every time
+        //weighting of songs
         
 
 //        // Toggle shuffle, save value in UserDefaults

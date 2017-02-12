@@ -11,7 +11,6 @@ import UIKit
 class RatingTableViewController: UITableViewController {
 
     var library = MusicLibrary().library
-    let tableCells
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,11 +88,19 @@ class RatingTableViewController: UITableViewController {
     func likeButtonPressed(_ sender: UIButton) {
         let indexPath = IndexPath(row: sender.tag, section: 0)
         let cell = tableView.cellForRow(at: indexPath) as! RatingTableViewCell
+        var likedSongs = UserDefaults.standard.array(forKey: "likedSongs") as? [Int] ?? [Int]()
+        
+        //[[UserDefaults standardUserDefaults] setObject:yourArray forKey:@"YourKey"];
+        //[[UserDefaults standardUserDefaults] synchronize];
         
         
         // Set song as liked in UserDefaults, or set it to neutral if it was already liked
         if UserDefaults.standard.integer(forKey: "songWithID\(sender.tag)") == 1 {
             UserDefaults.standard.set(0, forKey: "songWithID\(sender.tag)")
+            //likedSongs = likedSongs.filter() {$0 != String(sender.tag)}
+            //likedSongs.remove(at: likedSongs.index(of: String(sender.tag)))
+            
+          //  likedSongs.remove(at: likedSongs.index)
             cell.likeButton.titleLabel?.textColor = self.view.tintColor
             
         } else {
